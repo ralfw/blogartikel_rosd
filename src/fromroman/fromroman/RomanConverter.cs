@@ -5,16 +5,17 @@ namespace fromroman
 {
     public class RomanConverter
     {
-        public static int Convert(string roman) { throw new NotImplementedException();}
+        public static int Convert(string roman) {
+            var values = Parse(roman);
+            return values.Sum();
+        }
 
         
-        internal static int[] Parse(string roman)
-        {
+        internal static int[] Parse(string roman) {
             var digits = roman.ToCharArray();
             return digits.Select(MapToValue).ToArray();
 
-            int MapToValue(char digit)
-            {
+            int MapToValue(char digit) {
                 switch (char.ToUpper(digit))
                 {
                     case 'I': return 1;
