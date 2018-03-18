@@ -7,10 +7,10 @@ namespace fromroman_tests
     [TestFixture]
     public class RomanConverter_tests
     {
-        [Test]
-        public void Check_test()
-        {
-            RomanConverter.Convert("x");
+        [TestCase("MCMLXXXIV", 1984)]
+        [TestCase("MCDXCII", 1492)]
+        public void Akzeptanztests(string roman, int translation) {
+            Assert.AreEqual(translation, RomanConverter.Convert(roman));
         }
     }
 }
