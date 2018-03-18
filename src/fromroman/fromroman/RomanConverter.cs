@@ -7,6 +7,7 @@ namespace fromroman
     {
         public static int Convert(string roman) {
             var values = Parse(roman);
+            values = Subtract(values);
             return values.Sum();
         }
 
@@ -28,6 +29,12 @@ namespace fromroman
                     default: throw new InvalidOperationException($"Unknown digit: {digit}!");
                 }
             }
+        }
+
+        
+        public static int[] Subtract(int[] values)
+        {
+            return values;
         }
     }
 }

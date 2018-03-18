@@ -15,6 +15,14 @@ namespace fromroman_tests
         }
 
 
+        [TestCase(new[] {10, 5, 1}, new[] {10, 5, 1})]
+        [TestCase(new[] {1, 5, 10}, new[] {-1, -5, 10})]
+        public void Subtraktionsregel_anwenden(int[] values, int[] transformed)
+        {
+            Assert.AreEqual(transformed, RomanConverter.Subtract(values));            
+        }
+        
+
         [Test]
         public void Parse_with_all_digits()
         {
