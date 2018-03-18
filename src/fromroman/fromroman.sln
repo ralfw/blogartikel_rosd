@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fromroman", "fromroman\fromroman.csproj", "{91561065-976A-448A-B0B1-C8D2E32636F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fromroman_tests", "fromroman_tests\fromroman_tests.csproj", "{8BB4E474-39B3-40B6-B804-3850A6579B17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91561065-976A-448A-B0B1-C8D2E32636F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91561065-976A-448A-B0B1-C8D2E32636F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91561065-976A-448A-B0B1-C8D2E32636F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91561065-976A-448A-B0B1-C8D2E32636F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB4E474-39B3-40B6-B804-3850A6579B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB4E474-39B3-40B6-B804-3850A6579B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB4E474-39B3-40B6-B804-3850A6579B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB4E474-39B3-40B6-B804-3850A6579B17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
