@@ -32,9 +32,14 @@ namespace fromroman
         }
 
         
-        public static int[] Subtract(int[] values)
-        {
-            return values;
+        public static int[] Subtract(int[] values) {
+            var subtractedValues = new int[values.Length];
+            for (var i = 0; i < subtractedValues.Length - 1; i++) {
+                subtractedValues[i] = values[i];
+                if (values[i] < values[i + 1]) subtractedValues[i] *= -1;
+            }
+            subtractedValues[values.Length - 1] = values[values.Length - 1];
+            return subtractedValues;
         }
     }
 }
