@@ -7,6 +7,7 @@ namespace fromroman
     {
         public static int Convert(string roman) { throw new NotImplementedException();}
 
+        
         internal static int[] Parse(string roman)
         {
             var digits = roman.ToCharArray();
