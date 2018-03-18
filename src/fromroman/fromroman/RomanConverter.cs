@@ -12,7 +12,7 @@ namespace fromroman
         }
 
         
-        internal static int[] Parse(string roman) {
+        private static int[] Parse(string roman) {
             var digits = roman.ToCharArray();
             return digits.Select(MapToValue).ToArray();
 
@@ -32,7 +32,11 @@ namespace fromroman
         }
 
         
-        public static int[] Subtract(int[] values) {
+        /* Wenn ein Ziffernwert kleiner als der nächste ist, dann negieren.
+           Eine Zusammenfassung von Ziffernwerten findet bewusst nicht statt;
+           Aus [1,10] wird [-1,10], nicht [9]!
+         */
+        private static int[] Subtract(int[] values) {
             var subtractedValues = new int[values.Length];
             Array.Copy(values, subtractedValues, values.Length);
             
